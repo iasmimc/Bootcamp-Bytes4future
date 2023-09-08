@@ -13,3 +13,10 @@ function somatorio(arr) {
 }
 
 console.log("O somatorio é: " + resultado);
+
+// com reduce
+
+function somatorio(array) {
+  // escreve aqui a função
+  return array.reduce((ac, at) => ac + at);
+}
