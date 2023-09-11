@@ -107,10 +107,10 @@ class Calculadora {
   }
 }
 
-// const cal = new Calculadora();
-// console.log(cal.somar(4, 4));
-// console.log(cal.subtrair(4, 4));
-// console.log(cal.dividir(4, 4));
-// console.log(cal.multiplicar(4, 4));
-// console.log(cal.toJSON());
-// console.log(cal.toString());
+const cal = new Calculadora();
+console.log(cal.somar(4, 4));
+console.log(cal.subtrair(4, 4));
+console.log(cal.dividir(4, 4));
+console.log(cal.multiplicar(4, 4));
+console.log(cal.toJSON());
+console.log(cal.toString());

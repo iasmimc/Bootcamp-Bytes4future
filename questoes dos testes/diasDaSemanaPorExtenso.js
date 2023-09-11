@@ -26,13 +26,22 @@
 //   }
 // }
 
-const date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+// const date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
 
-// request a weekday along with a long date
-const options = {
-  weekday: "long",
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
-console.log(date.toLocaleDateString("pt-BR", options));
+// // request a weekday along with a long date
+// const options = {
+//   weekday: "long",
+//   year: "numeric",
+//   month: "long",
+//   day: "numeric",
+// };
+// console.log(date.toLocaleDateString("pt-BR", options));
+
+function dataPorExtenso(data) {
+  return data.toLocaleDateString("pt-BR", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}

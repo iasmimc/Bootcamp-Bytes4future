@@ -123,7 +123,7 @@ class Calculadora {
       `Foram realizadas ${this.historico.length} operações`
     );
 
-    linhasDoHistorico.push(`Último resultado: ' ${this.ultimoResultado}`);
+    linhasDoHistorico.push(`Último Resultado: ' ${this.ultimoResultado}`);
 
     /**
      * Transforma em string, usando a quebra de linha (\n) como delimitador.
