@@ -1,6 +1,6 @@
 // A função tempoEmPalavras recebe como argumentos a hora(h) e o minuto(m).
 
-// Implementa a função para retornar a hora dita em português com os numeros por extenso.
+// Implementa a função para retornar a hora dita em português com os numeros por .
 //  Por exemplo:
 
 // 10:30 - dez e meia

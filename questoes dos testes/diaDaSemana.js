@@ -23,3 +23,21 @@ function diaDaSemana(dia) {
     "Número inválido. Por favor insira um número entre 1 e 7."
   );
 }
+
+// com map
+
+function diaDaSemana(numero) {
+  const dias = new Map([
+    [1, "Domingo"],
+    [2, "Segunda-Feira"],
+    [3, "Terça-Feira"],
+    [4, "Quarta-Feira"],
+    [5, "Quinta-Feira"],
+    [6, "Sexta-Feira"],
+    [7, "Sábado"],
+  ]);
+  return (
+    dias.get(numero) ||
+    "Número inválido. Por favor insira um número entre 1 e 7."
+  );
+}

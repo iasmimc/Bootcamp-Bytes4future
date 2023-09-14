@@ -129,3 +129,5 @@ function diaEmPalavras(dia, mes, ano) {
 }
 
 console.log(diaEmPalavras(4, 4, 2022)); // quatro de abril de dois mil e vinte e dois
+
+// com map
