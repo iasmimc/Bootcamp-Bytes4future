@@ -1,4 +1,4 @@
-// function verificarVencedor(jogo) {
+// function rVencedor(jogo) {
 //   const linhas = obterLinhas(jogo);
 //   return linhas.includes("XXX")
 //     ? "X"
@@ -20,9 +20,9 @@
 //   return linhas.concat(colunas).concat(diagonais);
 // }
 
-// console.log(verificarVencedor(x));
+// console.log(rVencedor(x));
 
-function verificarVencedor(jogo) {
+function rVencedor(jogo) {
   const linhas = obterLinhas(jogo);
   return linhas.includes("XXX")
     ? "X"

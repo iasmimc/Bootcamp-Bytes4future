@@ -114,3 +114,69 @@ console.log(cal.dividir(4, 4));
 console.log(cal.multiplicar(4, 4));
 console.log(cal.toJSON());
 console.log(cal.toString());
+
+class Calculadora {
+  constructor() {
+    this.historico = [];
+  }
+
+  somar(a, b) {
+    let resultadoSoma = BigInt(a) + BigInt(b);
+
+    this.historico.push({
+      operacao: soma,
+      a: a,
+      b: b,
+      resultado: resultadoSoma,
+    });
+
+    return resultadoSoma;
+  }
+
+  subtrair(a, b) {
+    let resultadoSub = BigInt(a) - BigInt(b);
+
+    this.historico.push({
+      operacao: subtração,
+      a: a,
+      b: b,
+      resultado: resultadoSub,
+    });
+
+    return resultadoSub;
+  }
+
+  multiplicar(a, b) {
+    let resultadoMult = BigInt(a) * BigInt(b);
+
+    this.historico.push({
+      operacao: multiplicação,
+      a: a,
+      b: b,
+      resultado: resultadoMult,
+    });
+
+    return resultadoMult;
+  }
+
+  dividir(a, b) {
+    let resultadoDiv = BigInt(a) / BigInt(b);
+
+    this.historico.push({
+      operacao: divisão,
+      a: a,
+      b: b,
+      resultado: resultadoDiv,
+    });
+
+    return resultadoDiv;
+  }
+
+  lerHistorico(operacao) {
+    if (!operacao) {
+      return this.historico;
+    } else {
+      return this.historico.filter((item) => item.operacao === operacao);
+    }
+  }
+}

@@ -53,4 +53,3 @@ function retornaArray(num) {
 
 }
 console.log(retornaArray(15))
-
